@@ -87,7 +87,6 @@
     </style>
 </head>
 <body>
-    <title>talal_megumi</title>
     <div class="content">
         <h1>GALAXY STORE</h1>
         <p>مرحبًا بكم في متجر المجرة! إليكم المنتجات المتاحة:</p>
@@ -111,10 +110,9 @@
             { name: "تغير اسم الكوكب ثلاث ايام", price: "100 ستارز" },
             { name: "زيارة يوم", price: "50 ستارز" },
             { name: "زيارة يومين", price: "100 ستارز" },
-            { name: "زيارة ثلاثة ايام", price: "150 ستارز" };
+            { name: "زيارة ثلاثة ايام", price: "150 ستارز" }
         ];
 
-        // Display products immediately when the page loads
         function displayProducts() {
             const productListDiv = document.getElementById("productList");
             productListDiv.innerHTML = products.map(product => `
@@ -125,8 +123,7 @@
             `).join('');
         }
 
-        // Call function to display products on page load
-        displayProducts();
+        document.addEventListener('DOMContentLoaded', displayProducts);
     </script>
 </body>
 </html>
