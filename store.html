@@ -92,11 +92,9 @@
         <p>مرحبًا بكم في متجر المجرة! إليكم المنتجات المتاحة:</p>
         <div class="product-list" id="productList"></div>
     </div>
-    
     <footer>
         <p>حقوق الطبع والنشر © <a href="https://www.instagram.com/talal_megumi" target="_blank">talal_megumi</a></p>
     </footer>
-
     <script>
         const products = [
             { name: "تغير لقب يوم", price: "50 ستارز" },
@@ -112,7 +110,6 @@
             { name: "زيارة يومين", price: "100 ستارز" },
             { name: "زيارة ثلاثة ايام", price: "150 ستارز" }
         ];
-
         function displayProducts() {
             const productListDiv = document.getElementById("productList");
             productListDiv.innerHTML = products.map(product => `
@@ -122,7 +119,6 @@
                 </div>
             `).join('');
         }
-
         document.addEventListener('DOMContentLoaded', displayProducts);
     </script>
 </body>
